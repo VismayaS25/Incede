@@ -110,6 +110,4 @@ GitHub: https://github.com/VismayaS25
 
 ---
 
-## ⭐ If you find this useful
 
-Give this repo a ⭐ to support the project!
