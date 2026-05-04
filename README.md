@@ -28,7 +28,7 @@ This system is designed to **secure digital onboarding and transactions** by int
 * Feature engineering + anomaly detection
 * Backend API for real-time scoring
 
-📁 Folder: `Fraud_detection/`
+ Folder: `Fraud_detection/`
 
 ---
 
@@ -38,7 +38,7 @@ This system is designed to **secure digital onboarding and transactions** by int
 * Detects anomalies in user behavior
 * Enhances fraud detection accuracy
 
-📁 Folder: `Fraud_detection/`
+ Folder: `Fraud_detection/`
 
 ---
 
@@ -48,7 +48,7 @@ This system is designed to **secure digital onboarding and transactions** by int
 * Supports Aadhaar, PAN, Driving License
 * FastAPI backend with validation
 
-📁 Folder: `id_extractor/`
+ Folder: `id_extractor/`
 
 ---
 
@@ -60,11 +60,11 @@ This system is designed to **secure digital onboarding and transactions** by int
 * Detects real vs fake faces using video input
 * Handles occlusions and real-time inference
 
-📁 Folder: `WEBLivenesss/`
+ Folder: `WEBLivenesss/`
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Backend:** FastAPI, Python
 * **Frontend:** HTML, CSS, JavaScript
@@ -74,7 +74,7 @@ This system is designed to **secure digital onboarding and transactions** by int
 
 ---
 
-## 📂 Dataset Note
+## Dataset Note
 
 Datasets are not included due to size limitations.
 
