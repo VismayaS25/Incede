@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Login</h2>
+
+<form id="loginForm">
+
+<label>Email</label>
+<input id="loginEmail" type="email" required>
+
+<label>Password</label>
+<input id="loginPassword" type="password" required pattern="^(?=.*[0-9])(?=.*[@$!%*?&]).{8,}$" title="Password must be at least 8 characters, include a number and a special character (@,$,!,%)">
+<input type="checkbox" onclick="togglePassword()">Show Password>
+
+<button type="submit">Login</button>
+
+<p style="text-align:center; margin-top:10px;">
+Don't have an account?
+<a href="signup.html">Create Account</a>
+</p>
+
+</form>
+
+<script src="login.js"></script>
+
+</body>
+</html>

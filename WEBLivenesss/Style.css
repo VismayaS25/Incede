@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.main-container{
+    text-align:center;
+    margin-top:40px;
+}
+
+h1{
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.camera-card{
+    display:inline-block;
+    padding:15px;
+    background: rgba(255,255,255,0.08);
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+}
+
+video,canvas{
+    width:400px;
+    border-radius:10px;
+}
+
+#output{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+
+
+
+
+
+/* CountDown */
+
+#challengeTimer{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:40px;
+  color:red;
+  font-weight:bold;
+  z-index:999;
+  display:none;
+}

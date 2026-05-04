@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#272c40;
+    background-image: url("./images/travel.jpg");
+
+    min-height:100vh;
+
+    display:grid;
+    justify-content:center;
+    align-items:center;
+
+    background-size:contain;
+    background-position: center;
+    /* background-position-x: left; */
+    
+
+}
+
+form{
+    background:white;
+    padding:30px;
+    width:650px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(250, 249, 249, 0.952);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar button{
+background:#0077ff;
+color:white;
+border:none;
+padding:8px 16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.navbar h3{
+margin:0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color: aliceblue;
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    width:100%;
+    background:#0077ff;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:4px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fd1;
+}
+
+#status{
+    margin-top:10px;
+    text-align:center;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.486);
+    
+}

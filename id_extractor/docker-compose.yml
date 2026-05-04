@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  kyc-ocr:
+    build: .
+    container_name: kyc_ocr_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app

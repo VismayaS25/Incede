@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KYC Document Extractor</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ID Document Extractor</h1>
+
+<div class="upload-box">
+
+    <div id="dropZone" class="drop-zone">
+        Drag & Drop your document here
+    </div>
+
+    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf">
+    <button onclick="uploadFile()">Extract Information</button>
+</div>
+
+<!-- ADD THIS HERE -->
+<div id="previewContainer" style="text-align:center;margin-top:20px;">
+<img id="previewImage" style="max-width:100%;display:none;border-radius:8px;">
+<iframe id="previewPDF" style="width:100%;height:400px;display:none;"></iframe>
+</div>
+
+
+<div id="loader" class="loader" style="display:none;">
+Processing document...
+</div>
+
+<div id="progressBarContainer" style="display:none;">
+    <div id="progressBar"></div>
+</div>
+
+<h2>Extracted Information</h2>
+
+<!-- Aadhaar Fields -->
+<div id="aadhaarSection" style="display:none;">
+
+<label>Name</label>
+<input type="text" id="name">
+
+<label>DOB</label>
+<input type="text" id="dob">
+
+<label>Gender</label>
+<input type="text" id="gender">
+
+<label>Aadhaar Number</label>
+<input type="text" id="aadhaar">
+
+<label>Address</label>
+<textarea id="address"></textarea>
+
+</div>
+
+<!-- PAN Fields -->
+<div id="panSection" style="display:none;">
+
+<label>Name</label>
+<input type="text" id="pan_name">
+
+<label>DOB</label>
+<input type="text" id="pan_dob">
+
+<label>PAN Number</label>
+<input type="text" id="pan_number">
+
+<label>Father Name</label>
+<input type="text" id="father_name">
+
+</div>
+
+<!-- Driving License Fields -->
+<div id="dlSection" style="display:none;">
+
+<label>Name</label>
+<input type="text" id="dl_name">
+
+<label>DOB</label>
+<input type="text" id="dl_dob">
+
+<label>DL Number</label>
+<input type="text" id="dl_number">
+
+<label>Permanent Address</label>
+<textarea id="permanent_address"></textarea>
+
+<label>Present Address</label>
+<textarea id="present_address"></textarea>
+
+<label>Pincode</label>
+<input type="text" id="pincode">
+
+</div>
+
+<h3>API Debug Response</h3>
+<pre id="debugOutput" style="
+background:#111;
+color:#00ff90;
+padding:10px;
+border-radius:6px;
+max-height:200px;
+overflow:auto;
+"></pre>
+
+<!-- <script src="script.js"></script> -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>

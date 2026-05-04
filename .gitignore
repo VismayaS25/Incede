@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+
+# All virtual environments
+venv/
+.env/
+env/
+*_env/
+
+# Models / large files
+*.pth
+*.h5
+*.pt
+
+# Data
+data/
+datasets/
+*.zip
+*.mp4
+*.jpg
+*.png
+
+# DB
+*.db
+*.sqlite3
+
+*.npy
+OutputDatas/
+WEBLivenesss/OutputDatas/
+

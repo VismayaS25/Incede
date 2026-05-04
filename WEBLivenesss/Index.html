@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Liveness Verification</title>
+
+    <!-- MediaPipe Face Mesh -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/face_detection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #111;
+            color: #fff;
+        }
+        video, canvas {
+            width: 400px;
+            margin-top: 20px;
+        }
+        canvas {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+
+<h1>Photo Liveness Verification</h1>
+
+<div id="challengeTimer"></div>
+
+<div class="camera-card">
+
+    <div class="container">
+        <video id="video" autoplay muted></video>
+        <canvas id="output"></canvas>
+    </div>
+
+</div>
+
+<!-- Hidden canvas used ONLY for capturing real face image -->
+<canvas id="captureCanvas" style="display:none;"></canvas>
+
+<br>
+<button id="startBtn">Start Verification</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

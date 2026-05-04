@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+easyocr
+opencv-python
+python-multipart
+pydantic
+pytesseract
+pdf2image
+pdfplumber
+PyPDF2
+pillow
+numpy
+sqlite-utils
+pyspellchecker
