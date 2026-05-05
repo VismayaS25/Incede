@@ -1,4 +1,4 @@
-#  AI-Powered Fraud Detection & KYC Verification System
+#  AI-Based Fraud Detection & KYC Verification System
 
 This repository contains a complete **end-to-end security system** combining:
 
